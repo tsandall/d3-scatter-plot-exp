@@ -1,0 +1,27 @@
+project,status,in production,evaluating,prod %,eval %
+Kubernetes,graduated,842,611,35%,25%
+Prometheus,graduated,569,496,24%,21%
+OpenTracing,incubating,99,376,4%,16%
+gRPC,incubating,245,301,10%,13%
+Fluentd,graduated,385,292,16%,12%
+Linkerd,incubating,46,242,2%,10%
+Heron,incubating,10,136,0%,6%
+Zipkin,incubating,82,235,3%,10%
+CoreDNS,graduated,163,293,7%,12%
+Helm,incubating,430,450,18%,19%
+Envoy,graduated,108,350,5%,15%
+Jaeger,incubating,87,265,4%,11%
+Notary,incubating,26,172,1%,7%
+containerd,incubating,213,257,9%,11%
+CNI,incubating,258,202,11%,8%
+rkt,incubating,53,186,2%,8%
+Istio,n/a,105,499,4%,21%
+TUF,incubating,11,140,0%,6%
+Vitess,incubating,13,141,1%,6%
+NATS,incubating,54,151,2%,6%
+Rook,incubating,32,217,1%,9%
+SPIFFE,sandbox,16,173,1%,7%
+SPIRE,sandbox,10,146,0%,6%
+OPA,sandbox,12,136,1%,6%
+CloudEvents,incubating,44,168,2%,7%
+Telepresence,sandbox,47,211,2%,9%

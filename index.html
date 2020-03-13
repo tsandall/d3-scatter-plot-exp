@@ -33,18 +33,19 @@ body {
 <script src="https://d3js.org/d3.v3.min.js"></script>
 
 <script>
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
+function graph(file) {
+  var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-/* 
+/*
  * value accessor - returns the value to encode for a given data object.
  * scale - maps value to a visual display encoding, such as a pixel position.
  * map function - maps from data value to display value
  * axis - sets up axis
- */ 
+ */
 
-// setup x 
+// setup x
 var xValue = function(d) { return d["in production"];}, // data -> value
     xScale = d3.scale.linear().range([0, width]), // value -> display
     xMap = function(d) { return xScale(xValue(d));}, // data -> display
@@ -73,7 +74,7 @@ var tooltip = d3.select("body").append("div")
     .style("opacity", 0);
 
 // load data
-d3.csv("data.csv", function(error, data) {
+d3.csv(file, function(error, data) {
 
   // change string (from CSV) into number format
   data.forEach(function(d) {
@@ -121,12 +122,12 @@ d3.csv("data.csv", function(error, data) {
       .attr("r", 5)
       .attr("cx", xMap)
       .attr("cy", yMap)
-      .style("fill", function(d) { return color(cValue(d));}) 
+      .style("fill", function(d) { return color(cValue(d));})
       .on("mouseover", function(d) {
           tooltip.transition()
                .duration(200)
                .style("opacity", .9);
-          tooltip.html(d["project"] + "<br/> (" + xValue(d) 
+          tooltip.html(d["project"] + "<br/> (" + xValue(d)
 	        + ", " + yValue(d) + ")")
                .style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
@@ -164,7 +165,17 @@ d3.csv("data.csv", function(error, data) {
       .style("text-anchor", "end")
       .text(function(d) { return d;})
 });
-
+}
+</script>
+<h1>2018</h1>
+<script>
+graph("2018.csv");
+</script>
+<br/>
+<h1>2019</h1>
+<br/>
+<script>
+graph("2019.csv");
 </script>
 </body>
 </html>
