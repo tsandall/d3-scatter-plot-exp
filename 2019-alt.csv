@@ -1,0 +1,38 @@
+project,status,in production,evaluating,prod %,eval %
+Kubernetes,graduated,1019,280,76,21
+Prometheus,graduated,801,318,60,24
+Helm,incubating,691,306,52,23
+etcd,incubating,718,149,54,11
+Fluentd,graduated,506,290,38,22
+CoreDNS,graduated,549,241,41,18
+Envoy,graduated,228,465,17,35
+containerd,graduated,360,321,27,24
+gRPC,incubating,341,301,26,23
+OpenTracing,incubating,133,396,10,30
+Jaeger,graduated,147,362,11,27
+Linkerd,incubating,77,291,6,22
+Harbor,incubating,134,210,10,16
+Open Policy Agent,incubating,60,279,4,21
+Thanos,sandbox,84,222,6,17
+CRI-O,incubating,66,220,5,16
+Rook,incubating,54,229,4,17
+Network Service Mesh,sandbox,58,211,4,16
+OpenMetrics,sandbox,37,213,3,16
+NATS,incubating,75,153,6,11
+Flux,sandbox,54,170,4,13
+Notary,incubating,37,179,3,13
+OpenTelemetry,sandbox,16,195,1,15
+Virtual Kubelet,sandbox,44,165,3,12
+Telepresence,sandbox,38,168,3,13
+Falco,incubating,26,144,2,11
+SPIFFE,sandbox,16,152,1,11
+OpenEBS,sandbox,26,141,2,11
+KubeEdge,sandbox,25,133,2,10
+Buildpacks,sandbox,31,124,2,9
+CloudEvents,incubating,32,117,2,9
+Vitess,graduated,12,129,1,10
+Cortex,sandbox,15,122,1,9
+SPIRE,sandbox,9,127,1,9
+TiKV,incubating,8,103,1,8
+Dragonfly,sandbox,27,79,2,6
+Brigade,sandbox,13,88,1,7
